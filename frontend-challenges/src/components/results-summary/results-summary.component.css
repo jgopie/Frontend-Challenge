@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    box-sizing: border-box;
+}
+
+.largeText {
+    font-size: 50px;
+}
+
+.mediumText {
+    font-size: 25px;
+}
+
+.topContainer {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: hsl(221, 100%, 96%);
+    height: auto;
+    padding: 12%;
+}
+
+.bubble {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 33%;
+    padding: 12% 18%;
+    border-radius: 50%;
+    margin-bottom: 5%;
+}
+
+.transparent {
+    color: hsla(221, 100%, 96%, 0.7);
+}
+
+.topContainer p {
+    padding-bottom: 4%;
+}
+
+.bottomContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    margin: 0 10% 0 10%;
+    align-items: center;
+    font-weight: bold;
+}
+
+.summaryBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 4%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+.continueButton {
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(221, 100%, 96%);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.continueButton:hover {
+    cursor: pointer;
+    background-color: hsl(241, 81%, 54%);
+}
+
+.red {
+    background-color: hsla(0, 100%, 67%, 0.3);
+}
+
+.red> :first-child {
+    color: hsl(0, 100%, 67%)
+}
+
+.yellow {
+    background-color: hsla(39, 100%, 56%, 0.3);
+}
+
+.yellow> :first-child {
+    color: hsl(39, 100%, 56%);
+}
+
+.green {
+    background-color: hsla(166, 100%, 37%, 0.3);
+}
+
+.green> :first-child {
+    color: hsl(166, 100%, 37%);
+}
+
+.blue {
+    background-color: hsla(234, 85%, 45%, 0.3);
+}
+
+.blue> :first-child {
+    color: hsl(234, 85%, 45%);
+}
+
+span {
+    opacity: 0.8;
+}
+
+@media only screen and (min-width: 1440px) {
+    .mainContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        margin-top: 10%;
+    }
+
+    .topContainer {
+        border-radius: 10%;
+        width: 50%;
+        margin-left: 50%;
+    }
+
+    .bottomContainer {
+        width: 50%;
+        margin-right: 50%;
+    }
+
+    .bottomContainer>:first-child {
+        font-size: 30px;
+    }
+
+    .continueButton {
+        padding: 18px;
+        font-size: 30px;
+        border-radius: 60px;
+    }
+}
